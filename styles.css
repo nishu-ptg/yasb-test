@@ -153,28 +153,21 @@
   cursor: pointer;
 }
 
-.power-menu-widget:hover {
-  /* background-color: var(--theme-hover-bg); */
-  /* background-color: red; */
-}
-
 .power-menu-widget .label {
   font-size: var(--icon-font-size) !important;
   cursor: pointer;
 }
 
 .power-menu-popup {
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 12px;
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  /* padding: 12px; */
+  background-color: rgba(20, 24, 33, 0.85);
+  padding: 32px;
   border: 1px solid var(--theme-border);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   /* border-radius: var(--radius-popup); */
   /* border-radius: 12px; */
   /* color: #f00; */
-}
-
-.power-menu-popup {
-  background-color: rgba(20, 24, 33, 0.85);
-  padding: 32px;
   /* border: 1px solid rgba(255, 255, 255, 0.08); */
   /* border-radius: 16px; */
 }
@@ -190,7 +183,8 @@
   border-radius: 12px;
   background-color: var(--theme-hover-bg);
   background-color: rgba(255, 255, 255, 0.04);
-  transition: background-color 0.25s ease;
+  /* transition: background-color 0.25s ease; */
+  transition: background-color 0.2s, border-color 0.2s;
   /* transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); */
   /* color: #f00; */
   /* background-color: #fff; */
@@ -209,37 +203,38 @@
   cursor: pointer;
 }
 .power-menu-popup .button:hover {
-  background-color: var(--theme-popup-bg);
-}
-.power-menu-popup .button:hover {
   background-color: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.2);
-}
-.power-menu-popup .button .icon {
-  margin-top: 16px;
-  font-size: 48px;
+  /* border-color: rgba(255, 255, 255, 0.2); */
+  /* background-color: #fff; */
   color: #fff;
 }
 .power-menu-popup .button .icon {
+  /* margin-top: 16px; */
+  /* font-size: 48px; */
+  /* color: #fff; */
   margin-top: 8px;
-  font-size: 32px; /* Slightly pulled down from 48px to stop icon shapes blowing out pixels */
+  font-size: 32px;
   color: #e5e7eb;
+  /* color: inherit; */
 }
 .power-menu-popup .button .label {
-  margin-bottom: 32px;
-  font-size: 16px;
-  color: #fff;
-}
-.power-menu-popup .button .label {
+  /* margin-bottom: 32px; */
+  /* font-size: 16px; */
+  /* color: #fff; */
   margin-top: 12px;
   margin-bottom: 0px;
   font-size: 13px;
   font-weight: 500;
   color: #9ca3af;
+  /* color: inherit; */
 }
 
 .power-menu-popup .button:hover .label {
-  color: #ffffff; /* Text illuminates fully only when hovering the active tile */
+  /* color: #fff; */
+}
+
+.power-menu-popup .button .label:hover {
+  /* color: #ffffff; */
 }
 
 .power-menu-overlay {
@@ -250,68 +245,37 @@
 
 .power-menu-overlay .uptime {
   margin-bottom: 24px;
-  color: #888;
-  color: blue;
-}
-.power-menu-overlay .uptime {
-  margin-bottom: 24px;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.5px;
-  color: #6b7280; /* Subtle slate-gray instead of pure bright blue */
+  color: #6b7280; ]
 }
 
-.power-menu-popup .profile-info {
-  margin-bottom: 24px;
-  padding: 24px;
-  border-bottom: 1px solid var(--theme-fg-muted);
-  background-color: transparent;
-  /* color: #f00; */
-}
 .power-menu-popup .profile-info {
   margin-bottom: 28px;
   padding-bottom: 24px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  background-color: transparent;
+  /* background-color: transparent; */
 }
 
 .power-menu-popup .profile-info .profile-username {
   padding-top: 12px;
-  font-size: 24px;
-  color: var(--theme-fg);
-}
-.power-menu-popup .profile-info .profile-username {
-  padding-top: 12px;
   font-size: 26px;
   font-weight: 600;
-  color: #f3f4f6; /* Off-white cream looks softer than absolute pure #fff */
+  color: #f3f4f6;
 }
-.power-menu-popup .profile-info .profile-account-type {
-  margin: 4px 0;
-  color: var(--theme-fg-muted);
-  font-size: 16px;
-}
+
 .power-menu-popup .profile-info .profile-account-type {
   margin: 6px 0;
-  color: var(--theme-accent); /* Tethers the account tag to your theme accent */
+  color: var(--theme-accent); 
   font-size: 13px;
   font-weight: 500;
   /* text-transform: uppercase; */
   letter-spacing: 1px;
 }
+
 .power-menu-popup .profile-info .profile-email {
-  font-size: 16px;
-  /* font-size: 14px; */
-  color: var(--theme-fg);
-  color: #f3f4f6;
-}
-.power-menu-popup .profile-info .profile-emai2 {
   font-size: 14px;
-  color: #9ca3af; /* Muted gray */
+  color: #9ca3af; 
 }
 
-.power-menu-popup .button:nth-child(7) .icon,
-.power-menu-popup .button:nth-child(8) .icon {
-  color: #f87171; /* Warning soft coral red */
-  color: red;
-}
