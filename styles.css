@@ -3,29 +3,70 @@
   For more information, visit https://github.com/amnweb/yasb/wiki
 */
 
-/* Core Variables */
+/* Core Design Tokens */
 :root {
-  --yasb-bar-bg: rgba(0, 0, 0, 1);
-  --yasb-bar-border: #303030;
-  --yasb-fg: rgba(255, 255, 255, 1);
+  /* Backgrounds */
+  --theme-bar-bg: #000;
+  --theme-hover-bg: #111;
+  --theme-popup-bg: #222;
+
+  /* Borders & Accents */
+  --theme-border: #333;
+  --theme-accent: #aaa;
+
+  /* Spacing & Layout */
+  --widget-padding: 0px 12px;
+  --radius-widget: 4px;
+  --radius-popup: 6px;
+
+  /* Typography */
+  --theme-fg: #fff;
+  --theme-fg-muted: #aaa;
+
+  /* Fonts */
   --system-font: "Segoe UI Variable", "Segoe UI", sans-serif;
 }
 
 /* Global Reset */
-* { font-size: 13px;
+* {
+  font-size: 13px;
   font-weight: 400;
   font-family: var(--system-font);
-  color: var(--yasb-fg);
+  /* color: var(--theme-fg); */
 }
 
-/* Bar Container Layout */
+/* Bar Container */
 .yasb-bar {
-  background-color: var(--yasb-bar-bg);
-  border-bottom: 1px solid var(--yasb-bar-border);
+  background-color: var(--theme-bar-bg);
+  border-bottom: 1px solid var(--theme-border);
   padding: 0px 12px;
+  color: var(--theme-fg);
 }
 
-/* Base Widget Padding */
-.widget {
-  padding: 0 8px;
+/* Base Widget */
+.widget,
+.widget * {
+  color: var(--theme-fg);
+}
+
+/* Tooltip */
+.tooltip,
+.tooltip * {
+  background-color: var(--theme-popup-bg);
+  border: 1px solid var(--theme-border);
+  border-radius: var(--radius-popup);
+  padding: 6px 12px;
+  color: var(--theme-fg);
+}
+
+/* Clock */
+.clock-widget {
+  padding: var(--widget-padding);
+  border-radius: var(--radius-widget);
+}
+
+.clock-widget:hover {
+  background-color: var(--theme-hover-bg);
+  border-radius: 4px;
+  cursor: pointer;
 }
