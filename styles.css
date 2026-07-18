@@ -24,14 +24,20 @@
   --theme-fg-muted: #aaa;
 
   /* Fonts */
-  --system-font: "Segoe UI Variable", "Segoe UI", sans-serif;
+  --system-font:
+    "JetBrainsMono Nerd Font", "Segoe UI Variable", "Segoe UI", sans-serif;
+
+  --bar-font-size: 13px;
+  --icon-font-size: 16px;
 }
 
 /* Global Reset */
 * {
-  font-size: 13px;
+  /* font-size: 13px; */
   font-weight: 400;
   font-family: var(--system-font);
+  font-size: var(--bar-font-size);
+  /* font-weight: 500; */
   /* color: var(--theme-fg); */
 }
 
@@ -47,6 +53,8 @@
 .widget,
 .widget * {
   color: var(--theme-fg);
+  display: flex;
+  align-items: center;
 }
 
 /* Tooltip */
