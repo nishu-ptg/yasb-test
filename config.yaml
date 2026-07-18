@@ -60,13 +60,20 @@ widgets:
     type: "yasb.power_menu.PowerMenuWidget"
     options:
       label: "\uf011"
+      uptime: true
+      show_user: true
+      profile_image_size: 80
+      blur: true
+      blur_background: true
+      button_row: 4
+      menu_style: "fullscreen"
       buttons:
         lock: ["\uea75", "Lock"]
         signout: ["\udb80\udf43", "Sign out"]
         sleep: ["\u23fe", "Sleep"]
         hibernate: ["\uf28e", "Hibernate"]
-        restart: ["\uead2", "Restart"]
         shutdown: ["\uf011", "Shut Down"]
-        force_shutdown: ["\udb84\udf2d", "Force Shut Down"]
-        force_restart: ["\udb81\udda9", "Force Restart"]
-        cancel: ["", "Cancel"]
+        restart: ["\uead2", "Restart"]
+        force_shutdown: ["\uf011", "Shut Down"]
+        force_restart: ["\uead2", "Restart"]
+        cancel: ["\udb81\udf3a", "Cancel"]
