@@ -70,3 +70,57 @@
   border-radius: 4px;
   cursor: pointer;
 }
+
+.clock-popup.calendar {
+  /* min-width: 260px; */
+  background-color: var(--theme-popup-bg);
+  border: 1px solid var(--theme-border);
+  border-radius: var(--radius-popup);
+  padding: 16px;
+}
+
+.clock-popup.calendar * {
+  color: var(--theme-fg);
+}
+
+/* Top Headers (Month and Year Display) */
+.clock-popup.calendar .month-label,
+.clock-popup.calendar .year-label {
+  /* font-size: 14px; */
+  /* font-weight: 600; */
+  /* padding-bottom: 8px; */
+}
+
+.clock-popup.calendar .date-label,
+.clock-popup.calendar .day-label {
+  /* font-size: 10px; */
+  /* max-height: 0px; */
+  /* margin: 0;
+  padding: 0; */
+}
+
+/* Base style for the calendar dates grid table */
+.clock-popup.calendar .calendar-table {
+  background-color: var(--theme-bar-bg);
+  /* padding: 4px; */
+  /* border: 1px solid var(--theme-border); */
+}
+
+.clock-popup.calendar .calendar-table::item {
+  background-color: var(--theme-hover-bg);
+  /* color: var(--theme-fg); */
+  padding: 6px;
+  margin: 2px;
+  border-radius: var(--radius-widget);
+}
+
+.clock-popup.calendar .calendar-table::item:disabled {
+  color: var(--theme-fg-muted) !important;
+  opacity: 0.4 !important;
+}
+
+.clock-popup.calendar .calendar-table::item:selected {
+  color: var(--theme-bar-bg);
+  /* font-weight: bold; */
+  background-color: var(--theme-accent);
+}

@@ -36,6 +36,15 @@ widgets:
       #label: '{%H:%M}<span>{alarm}</span>'
       label: "{%a, %d %b %H:%M}"
       label_alt: "{%I:%M:%S %p}"
+      calendar:
+        blur: true
+        # round_corners: true
+        alignment: center
+        # direction: down
+        extended: false
+        show_years: true
+        show_holidays: true
+        show_week_numbers: true
       callbacks:
         on_left: toggle_calendar
         on_middle: toggle_label
