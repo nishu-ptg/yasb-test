@@ -148,8 +148,14 @@
 
 /* Power */
 .power-menu-widget {
-  transition: background-color 0.25s ease;
+  /* transition: background-color 0.25s ease; */
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+}
+
+.power-menu-widget:hover {
+  /* background-color: var(--theme-hover-bg); */
+  /* background-color: red; */
 }
 
 .power-menu-widget .label {
@@ -162,8 +168,15 @@
   padding: 12px;
   border: 1px solid var(--theme-border);
   /* border-radius: var(--radius-popup); */
-  border-radius: 12px;
+  /* border-radius: 12px; */
   /* color: #f00; */
+}
+
+.power-menu-popup {
+  background-color: rgba(20, 24, 33, 0.85);
+  padding: 32px;
+  /* border: 1px solid rgba(255, 255, 255, 0.08); */
+  /* border-radius: 16px; */
 }
 
 .power-menu-popup .button {
@@ -176,27 +189,62 @@
   /* border-radius: var(--radius-popup); */
   border-radius: 12px;
   background-color: var(--theme-hover-bg);
+  background-color: rgba(255, 255, 255, 0.04);
   transition: background-color 0.25s ease;
+  /* transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); */
   /* color: #f00; */
   /* background-color: #fff; */
   cursor: pointer;
 }
+.power-menu-popup .button2 {
+  /* min-width: 100px; */
+  /* min-height: 100px; */
+  /* max-height: 100px; */
+  /* margin: 10px; */
+  /* padding: 24px 12px; */
+  /* border-radius: 14px; */
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  background-color: rgba(255, 255, 255, 0.04); /* Subtly reflective tiles */
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
 .power-menu-popup .button:hover {
   background-color: var(--theme-popup-bg);
+}
+.power-menu-popup .button:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 .power-menu-popup .button .icon {
   margin-top: 16px;
   font-size: 48px;
   color: #fff;
 }
+.power-menu-popup .button .icon {
+  margin-top: 8px;
+  font-size: 32px; /* Slightly pulled down from 48px to stop icon shapes blowing out pixels */
+  color: #e5e7eb;
+}
 .power-menu-popup .button .label {
   margin-bottom: 32px;
   font-size: 16px;
   color: #fff;
 }
+.power-menu-popup .button .label {
+  margin-top: 12px;
+  margin-bottom: 0px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #9ca3af;
+}
+
+.power-menu-popup .button:hover .label {
+  color: #ffffff; /* Text illuminates fully only when hovering the active tile */
+}
 
 .power-menu-overlay {
   background-color: rgba(255, 255, 255, 0.1);
+  /* background-color: rgba(10, 12, 16, 0.75); */
   /* color: #f00; */
 }
 
@@ -204,6 +252,13 @@
   margin-bottom: 24px;
   color: #888;
   color: blue;
+}
+.power-menu-overlay .uptime {
+  margin-bottom: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #6b7280; /* Subtle slate-gray instead of pure bright blue */
 }
 
 .power-menu-popup .profile-info {
@@ -213,17 +268,50 @@
   background-color: transparent;
   /* color: #f00; */
 }
+.power-menu-popup .profile-info {
+  margin-bottom: 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: transparent;
+}
+
 .power-menu-popup .profile-info .profile-username {
   padding-top: 12px;
   font-size: 24px;
   color: var(--theme-fg);
+}
+.power-menu-popup .profile-info .profile-username {
+  padding-top: 12px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #f3f4f6; /* Off-white cream looks softer than absolute pure #fff */
 }
 .power-menu-popup .profile-info .profile-account-type {
   margin: 4px 0;
   color: var(--theme-fg-muted);
   font-size: 16px;
 }
+.power-menu-popup .profile-info .profile-account-type {
+  margin: 6px 0;
+  color: var(--theme-accent); /* Tethers the account tag to your theme accent */
+  font-size: 13px;
+  font-weight: 500;
+  /* text-transform: uppercase; */
+  letter-spacing: 1px;
+}
 .power-menu-popup .profile-info .profile-email {
   font-size: 16px;
+  /* font-size: 14px; */
   color: var(--theme-fg);
+  color: #f3f4f6;
+}
+.power-menu-popup .profile-info .profile-emai2 {
+  font-size: 14px;
+  color: #9ca3af; /* Muted gray */
+}
+
+.power-menu-popup .button:nth-child(7) .icon,
+.power-menu-popup .button:nth-child(8) .icon {
+  color: #f87171; /* Warning soft coral red */
+  color: red;
 }
