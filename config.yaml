@@ -18,8 +18,9 @@ bars:
       position: top
       align: center
     window_flags:
-      always_on_top: true
+      always_on_top: false
       windows_app_bar: true
+      hide_on_fullscreen: true
     dimensions:
       width: 100%
       height: 34
@@ -34,11 +35,15 @@ widgets:
     type: yasb.clock.ClockWidget
     options:
       #label: '{%H:%M}<span>{alarm}</span>'
-      label: "{%a, %d %b %H:%M}"
-      label_alt: "{%I:%M:%S %p}"
+      label: " <span>{alarm}</span> {%a, %d %b %H:%M}"
+      label_alt: " <span>{alarm}</span> {%I:%M:%S %p}"
+      alarm_icons:
+        enabled: "\uf0f3"
+        disabled: "\uf0a2"
+        snooze: "\uf1f6"
       calendar:
         blur: true
-        # round_corners: true
+        round_corners: true
         alignment: center
         # direction: down
         extended: false
