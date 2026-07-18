@@ -59,11 +59,14 @@ widgets:
   power_menu:
     type: "yasb.power_menu.PowerMenuWidget"
     options:
-      label: "\u23fb"
+      label: "\uf011"
       buttons:
+        lock: ["\uea75", "Lock"]
+        signout: ["\udb80\udf43", "Sign out"]
+        sleep: ["\u23fe", "Sleep"]
+        hibernate: ["\uf28e", "Hibernate"]
         restart: ["\uead2", "Restart"]
         shutdown: ["\uf011", "Shut Down"]
-        signout: ["\udb80\udf43", "Sign out"]
-        hibernate: ["\uf28e", "Hibernate"]
-        lock: ["\uea75", "Lock"]
-        cancel: ["\udb81\udf3a", "Cancel"]
+        force_shutdown: ["\udb84\udf2d", "Force Shut Down"]
+        force_restart: ["\udb81\udda9", "Force Restart"]
+        cancel: ["", "Cancel"]

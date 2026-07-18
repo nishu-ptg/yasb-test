@@ -24,9 +24,7 @@
   --theme-fg-muted: #aaa;
 
   /* Fonts */
-  --system-font:
-    "JetBrainsMono Nerd Font", "Segoe UI Variable", "Segoe UI", sans-serif;
-
+  --system-font: "JetBrainsMono NFP";
   --bar-font-size: 13px;
   --icon-font-size: 16px;
 }
@@ -146,4 +144,10 @@
   color: rgba(255, 255, 255, 0.6);
   font-size: 0.9em;
   font-weight: bold;
+}
+
+/* Power */
+.power-menu-widget .label {
+  font-size: var(--icon-font-size) !important;
+  cursor: pointer;
 }
