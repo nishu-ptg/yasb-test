@@ -28,7 +28,8 @@ bars:
       left: []
       center:
         - clock
-      right: []
+      right:
+        - power_menu
 
 widgets:
   clock:
@@ -55,3 +56,14 @@ widgets:
         on_middle: toggle_label
         #on_right: "context_menu"
         on_right: "exec cmd.exe /c start ms-clock:"
+  power_menu:
+    type: "yasb.power_menu.PowerMenuWidget"
+    options:
+      label: "\u23fb"
+      buttons:
+        restart: ["\uead2", "Restart"]
+        shutdown: ["\uf011", "Shut Down"]
+        signout: ["\udb80\udf43", "Sign out"]
+        hibernate: ["\uf28e", "Hibernate"]
+        lock: ["\uea75", "Lock"]
+        cancel: ["\udb81\udf3a", "Cancel"]
