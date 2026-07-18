@@ -1,0 +1,16 @@
+# Log files
+yasb.log
+*.log
+
+# My old experiments directory
+.olds/
+
+# Windows OS artifacts
+Thumbs.db
+Desktop.ini
+
+# Python/Environment caches (just in case they run locally)
+__pycache__/
+*.pyc
+.env
+.venv/
