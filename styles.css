@@ -55,6 +55,10 @@
   align-items: center;
 }
 
+.widget:hover * {
+  /* color: #0df; */
+}
+
 /* Tooltip */
 .tooltip,
 .tooltip * {
@@ -75,6 +79,7 @@
 .clock-widget:hover {
   /* background-color: var(--theme-hover-bg);
   border-radius: 4px; */
+  /* color: #0df; */
   cursor: pointer;
 }
 
@@ -105,6 +110,7 @@
   /* font-weight: 400; */
   /* background-color: var(--theme-fg); */
   background-color: var(--theme-fg-muted);
+  background-color: #0df;
   /* background-color: var(--theme-accent); */
   /* border-radius: var(--radius-widget); */
   border-radius: 12px;
@@ -123,6 +129,11 @@
   font-weight: 700;
   min-width: 180px;
   /* max-width: 180px; */
+}
+
+/* .clock-popup.calendar .month-label, */
+.clock-popup.calendar .date-label {
+  color: #0df;
 }
 
 .clock-popup.calendar .month-label {
