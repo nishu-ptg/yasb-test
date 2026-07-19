@@ -62,7 +62,7 @@ widgets:
       label: "\uf011"
       uptime: true
       show_user: true
-      profile_image_size: 140
+      profile_image_size: 180
       blur: true
       blur_background: true
       button_row: 4
