@@ -162,6 +162,7 @@
   /* background-color: rgba(0, 0, 0, 0.4); */
   /* padding: 12px; */
   background-color: rgba(20, 24, 33, 0.85);
+  /* transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1); */
   padding: 32px;
   border: 1px solid var(--theme-border);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -193,10 +194,12 @@
   /* background-color: #fff; */
   cursor: pointer;
   /* border: 1px solid rgba(255, 255, 255, .1); */
+  outline: none;
 }
+
 .power-menu-popup .button:hover {
   background-color: rgba(255, 255, 255, 0.12);
-  /* border-color: rgba(255, 255, 255, 0.2); */
+  border-color: rgba(255, 255, 255, 0.2);
   /* background-color: #fff; */
   color: #fff;
 }
@@ -206,7 +209,7 @@
   /* color: #fff; */
   margin-top: 8px;
   font-size: 32px;
-  color: #ccc;
+  color: #aaa;
   /* color: inherit; */
 }
 .power-menu-popup .button .label {
@@ -217,7 +220,7 @@
   margin-bottom: 0px;
   font-size: 14px;
   font-weight: 500;
-  color: #aaa;
+  color: #888;
   /* color: inherit; */
 }
 

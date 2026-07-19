@@ -74,6 +74,6 @@ widgets:
         hibernate: ["\uf28e", "Hibernate"]
         shutdown: ["\uf011", "Shut Down"]
         restart: ["\uead2", "Restart"]
-        force_shutdown: ["\uf011", "Force Shut Down"]
-        force_restart: ["\uead2", "Force Restart"]
+        force_shutdown: ["!\uf011", "Force Shut Down"]
+        force_restart: ["!\uead2", "Force Restart"]
         cancel: ["\udb81\udf3a", "Cancel"]
