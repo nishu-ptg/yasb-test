@@ -25,7 +25,8 @@ bars:
       width: 100%
       height: 34
     widgets:
-      left: []
+      left:
+        - home
       center:
         - clock
       right:
@@ -77,3 +78,48 @@ widgets:
         force_shutdown: ["!\uf011!", "Force Shut Down"]
         force_restart: ["!\uead2!", "Force Restart"]
         cancel: ["\udb81\udf3a", "Cancel"]
+  home:
+    type: "yasb.home.HomeWidget"
+    options:
+      label: "<span>\uf40e</span>"
+      menu_list:
+        - { title: "User Home", path: "~" }
+        - { title: "Download", path: "D:\\Downloads" }
+        - { title: "Documents", path: "C:\\Users\\amn\\Documents" }
+        - { title: "Pictures", path: "C:\\Users\\amn\\Pictures" }
+        - {
+            title: "Sound Settings",
+            command: "cmd.exe /c start ms-settings:sound",
+          }
+        - { title: "Windows Settings", uri: "ms-settings:" }
+        - { separator: true }
+        - { title: "PowerShell", command: "powershell.exe", show_window: true }
+        - {
+            title: "Winget Update",
+            command: "powershell.exe",
+            args: ["-NoProfile", "-NoExit", "-Command", "winget upgrade"],
+            show_window: true,
+          }
+        - { title: "Registry Editor", path: "C:\\Windows\\regedit.exe" }
+        - { title: "Event Viewer", path: "C:\\Windows\\System32\\eventvwr.msc" }
+        - {
+            title: "Device Manager",
+            path: "C:\\Windows\\System32\\devmgmt.msc",
+          }
+        - { title: "Services", path: "C:\\Windows\\System32\\services.msc" }
+        - {
+            title: "Resource Monitor",
+            path: "explorer.exe shell:RecycleBinFolder",
+          }
+        - {
+            title: "Add/Remove Programs",
+            path: "C:\\Windows\\System32\\appwiz.cpl",
+          }
+      system_menu: true
+      power_menu: true
+      blur: true
+      round_corners: true
+      round_corners_type: "normal"
+      border_color: "System"
+      offset_top: 0
+      offset_left: -12
