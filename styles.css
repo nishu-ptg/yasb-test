@@ -164,7 +164,7 @@
   background-color: rgba(20, 24, 33, 0.85);
   /* background-color: rgba(255, 255, 255, 0.8); */
   /* transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1); */
-  padding: 32px;
+  padding: 12px;
   /* border: 1px solid var(--theme-border); */
   /* border: 1px solid rgba(255, 255, 255, 0.18); */
   /* border-radius: var(--radius-popup); */
@@ -175,19 +175,19 @@
 }
 
 .power-menu-popup .button {
-  min-width: 96px;
+  min-width: 120px;
   /* max-width: 96px; */
-  min-height: 96px;
-  max-height: 96px;
+  min-height: 124px;
+  max-height: 124px;
   /* min-height: 68px; */
   /* max-height: 68px; */
-  margin: 12px;
-  padding: 32px;
-  min-width: 180px;
+  margin: 8px;
+  /* padding: 32px; */
+  min-width: 200px;
   /* max-width: 180px; */
   /* min-width: 160px; */
   /* min-width: 220px; */
-  max-width: 450px;
+  max-width: 420px;
   /* max-width: 410px; */
   /* max-width: 530px; */
   /* max-width: 120px; */
@@ -231,7 +231,7 @@
   /* margin-top: 16px; */
   /* font-size: 48px; */
   /* color: #fff; */
-  margin-top: 8px;
+  margin-top: 4px;
   font-size: 32px;
   color: #aaa;
   /* color: inherit; */
@@ -244,7 +244,7 @@
   margin-top: 12px;
   margin-bottom: 0px;
   font-size: 14px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   font-weight: 400;
   color: #888;
@@ -282,21 +282,21 @@
 }
 
 .power-menu-popup .profile-info {
-  margin-bottom: 28px;
-  padding-bottom: 24px;
+  margin: 12px;
+  padding-bottom: 12px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   background-color: transparent;
 }
 
 .power-menu-popup .profile-info .profile-username {
-  padding-top: 12px;
-  font-size: 26px;
+  padding-top: 8px;
+  font-size: 16px;
   font-weight: 600;
   color: #f3f4f6;
 }
 
 .power-menu-popup .profile-info .profile-account-type {
-  margin: 6px 0;
+  margin: 4px 0;
   color: var(--theme-accent);
   color: #888;
   color: rgb(0, 208, 255);
@@ -307,7 +307,7 @@
 }
 
 .power-menu-popup .profile-info .profile-email {
-  font-size: 14px;
+  font-size: 13px;
   color: #ccc;
   /* color: rgb(0, 208, 255); */
 }
@@ -315,14 +315,4 @@
 .power-menu-popup .button.force-shutdown .label,
 .power-menu-popup .button.force-restart .label {
   /* font-size: 14px; */
-}
-
-.power-menu-popup .button2 {
-  /* ... keep your existing widths, heights, transitions, and borders ... */
-
-  /* FLIP TO HORIZONTAL */
-  display: flex;
-  flex-direction: row; /* Forces icon and text side-by-side */
-  align-items: center; /* Centers both perfectly on the vertical axis */
-  justify-content: center; /* Centers the whole group horizontally inside the tile */
 }
