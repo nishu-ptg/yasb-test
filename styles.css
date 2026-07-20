@@ -26,7 +26,7 @@
   /* Fonts */
   --system-font: "JetBrainsMono NFP";
   --bar-font-size: 13px;
-  --icon-font-size: 16px;
+  --icon-font-size: 18px;
 }
 
 /* Global Reset */
@@ -42,6 +42,8 @@
 /* Bar Container */
 .yasb-bar {
   background-color: var(--theme-bar-bg);
+  background-color: #111;
+  background: linear-gradient(to right, #111, #222, #111);
   /* border-bottom: 1px solid var(--theme-border); */
   padding: 0px 12px;
   color: var(--theme-fg);
@@ -347,13 +349,14 @@
 .home-widget .icon {
   color: #fff;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
 }
 .home-widget .icon:hover {
   /* color: #cdd6f4; */
 }
 .home-menu {
   background-color: rgba(17, 17, 27, 0.04);
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .home-menu .menu-item {
   padding: 8px 48px 7px 16px;
@@ -361,17 +364,17 @@
   /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
   color: #fff;
   cursor: pointer;
-  background-color: rgba(17, 17, 27, 0.3);
+  background-color: rgba(17, 17, 27, 0.4);
   font-weight: 600;
   letter-spacing: 1px;
   /* text-transform: uppercase; */
 }
 .home-menu .menu-item:hover {
-  background-color: rgba(128, 130, 158, 0.15);
-  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-color: rgba(128, 130, 158, 0.1);
+  background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
-  /* color: #0df; */
-  /* text-transform: lowercase; */
+  color: #0df;
+  /* text-transform: uppercase; */
 }
 .home-menu .separator {
   max-height: 1px;

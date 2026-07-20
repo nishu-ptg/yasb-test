@@ -18,7 +18,7 @@ bars:
       position: top
       align: center
     window_flags:
-      always_on_top: false
+      always_on_top: true
       windows_app_bar: true
       hide_on_fullscreen: true
     dimensions:
