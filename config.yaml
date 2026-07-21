@@ -30,6 +30,7 @@ bars:
       center:
         - clock
       right:
+        - traffic
         - power_menu
 
 widgets:
@@ -116,10 +117,30 @@ widgets:
             path: "C:\\Windows\\System32\\appwiz.cpl",
           }
       system_menu: true
-      power_menu: true
+      # power_menu: true
       blur: true
       round_corners: true
       round_corners_type: "normal"
       border_color: "System"
       offset_top: 0
       offset_left: -12
+  traffic:
+    type: "yasb.traffic.TrafficWidget"
+    options:
+      label: "<div style=\"text-align:right\">{upload_speed} \u25b2</div><div style=\"text-align:right;\">{download_speed} \u25bc</div>"
+      # label: "\ueb01 \ueab4 {download_speed} | \ueab7 {upload_speed}"
+      label_alt: "Download {download_speed} | Upload {upload_speed}"
+      update_interval: 1000
+      speed_unit: "bytes"
+      menu:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "system"
+        alignment: "left"
+        direction: "down"
+        offset_top: 6
+        offset_left: 0
+      callbacks:
+        on_left: "toggle_menu"
+        on_right: "toggle_label"
